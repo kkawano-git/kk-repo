@@ -1,0 +1,17 @@
+
+
+
+
+ssh ec2-user@13.113.195.88 -i /Users/kawanokoki/Documents/VScode/Terraform/20241029_terraform/work/kk-key.pem
+
+
+scp -i /Users/kawanokoki/Documents/VScode/Terraform/20241029_terraform/work/kk-key.pem /Users/kawanokoki/Documents/VScode/Terraform/20241029_terraform/work/kk-key.pem ec2-user@52.198.165.160:/home/ec2-user/.ssh/kk-key.pem
+scp -i /Users/kawanokoki/Documents/VScode/Terraform/20241029_terraform/work/kk-key.pem /Users/kawanokoki/Documents/VScode/Terraform/20241029_terraform/work/makedir.sh ec2-user@52.198.165.160:/home/ec2-user/makedir.sh
+ssh test@10.0.2.228
+
+sudo ansible-playbook -i inventory/hosts site.yml
+
+ssh test@10.0.2.100
+
+ssh ec2-user@10.0.2.100 -i /home/ec2-user/.ssh/kk-key.pem
+
